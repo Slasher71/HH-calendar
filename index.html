@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Календарь</title>
+
+    <link rel="stylesheet" href="css/style.css" media="all" />
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+
+    <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="head">
+            <div class="head-inner">
+                <div class="controls">
+                    <input type="button" value="Добавить" />
+                    <input type="button" value="Обновить" />
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Событие, дата или участник" />
+                </div>
+            </div>
+        </header>
+        <div class="calendar-wrapper">
+            <div class="calendar-controls">
+                <input type="button" class="month-control" id="prev-month" value="&#9664;" />
+                <span class="current-date"></span>
+                <input type="button" class="month-control" id="next-month" value="&#9654;" />
+                <input type="button" id="show-today" value="Сегодня" />
+            </div>
+            <section class="calendar"></section>
+        </div>
+        <div id="add-box" class="add-box">
+            <input type="button" value="x" class="add-box-close" />
+            <h2 class="add-box-header">Митинг на Болотной</h2>
+            <span class="add-box-date"></span>
+            <input type="text" placeholder="Имена участников" />
+            <textarea rows="5" placeholder="Описание"></textarea>
+            <div class="add-box-buttons">
+                <input type="button" class="add-box-new" value="Готово" />
+                <input type="button" class="add-box-remove" value="Удалить" />
+            </div>
+        </div>
+    </div>
+
+
+    <!--Подключение jQuery-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+/*===========================================================*/
+/*  Шапка
+/*===========================================================*/
+
+
+.head{
+  background: #f4f4f4;
+  padding: 50px 0 10px;
+  margin: 0 0 16px;
+  box-shadow: 0 2px 4px #ccc;
+  position: relative;
+  @include clear;
+}
+
+.head-inner{
+  position: relative;
+  max-width: $container + 40px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.controls{
+  float: left;
+  margin: 5px 0;
+}
+
+.search{
+  position: relative;
+  float: right;
+  padding: 0 0 0 30px;
+  margin: 5px 0;
+
+  input[type="search"]{
+    width: 200px;
+    transition: .15s;
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 28px;
+    width: 28px;
+    background: url("../img/search.png") no-repeat center;
+  }
+}

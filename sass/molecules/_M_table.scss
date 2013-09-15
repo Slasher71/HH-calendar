@@ -1,0 +1,102 @@
+/*===========================================================*/
+/*  Сам календарь
+/*===========================================================*/
+
+.calendar-wrapper {
+  max-width: $container;
+  margin: auto;
+}
+
+.calendar{
+  width: 100%;
+  margin: 12px 0 0;
+  border-collapse: separate;
+  border-left: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  @include clear;
+}
+
+.cell{
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  width: 14.28571428571429%;
+  height: 118px;
+  padding: 5px 7px;
+  font-size: 11px;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  border-left: none;
+  line-height: 1.4;
+  color: #666;
+  transition: .15s;
+  &:hover{
+    background: rgba(0,20,0,.02);
+  }
+}
+
+.calendar-controls{
+  height: 18px;
+  input{
+    vertical-align: bottom;
+    border: none;
+    margin: 0 3px;
+    padding: 1px 7px 2px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0,0,0,.2) inset;
+    background: #fff;
+    font-size: 11px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:hover{
+      background: #fafafa;
+      box-shadow: 0 0 3px rgba(0,0,0,.4) inset;
+    }
+  }
+  .month-control{
+    font-size: 6.5px;
+    font-weight: bold;
+    padding: 0 1px 1px 0;
+    width: 17px;
+    height: 17px;
+    line-height: 16px;
+  }
+}
+
+.current-date{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 113px;
+  text-align: center;
+}
+
+.day-name,
+.day{
+  color: #aaa;
+}
+
+.current-day{
+  background: #f4f4f4 !important;
+  .day{
+    font-weight: bold;
+    color: #666;
+  }
+}
+
+.selected-day{
+  background: #e5f1f9 !important;
+  box-shadow: 2px 2px 0 #86c9fd inset, -1px -1px 0 #86c9fd inset !important;
+  border-color: #86c9fd !important;
+}
+
+.todo{
+  background: #c2e4fe !important;
+  .todo-heading{
+    font-size: 11px;
+    margin: 3px 0;
+  }
+  .todo-members{
+
+  }
+}

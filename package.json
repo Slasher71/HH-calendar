@@ -1,0 +1,10 @@
+{
+  "name": "test-grunt-project",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-cssmin": "latest"
+  }
+}

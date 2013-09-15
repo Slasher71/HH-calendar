@@ -1,0 +1,52 @@
+@import "utilities/reset";
+@import "utilities/mixins";
+@import "utilities/variables";
+
+@import "quarks/Q_links";
+@import "quarks/Q_inputs";
+
+//@import "quarks/Q_tables";
+//@import "quarks/Q_animations";
+
+//@import "compass";
+//$src-spacing: 25px;
+//@import "src/*.png";
+
+//@import "susy";
+//$total-columns  : 12;
+//$column-width   : 60px;
+//$gutter-width   : 20px;
+//$grid-padding   : 10px;
+//$container-style: static; //magic, fluid
+
+// REFERENCE:
+// @include sprite-background-position($src-sprites, logo1, 50px, 230px);
+// $height: src-sprite-height();
+
+
+/*===========================================================*/
+/*  Главный код сайта
+/*===========================================================*/
+
+html{
+  background: #fff;
+}
+
+.wrapper{
+  padding: 0 0 50px;
+}
+
+.head-inner,
+.calendar-wrapper{
+  padding: 0 20px;
+}
+
+
+
+@import "atoms/A_buttons";
+
+@import "molecules/M_head";
+@import "molecules/M_table";
+@import "molecules/M_boxes";
+
+@import "utilities/responsive";

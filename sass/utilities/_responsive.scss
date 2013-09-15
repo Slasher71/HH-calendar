@@ -1,0 +1,39 @@
+/*===========================================================*/
+/*  Адаптивность
+/*===========================================================*/
+
+@media screen and (max-width: 800px) {
+  .cell{
+    width: 20%;
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cell{
+    width: 33.33333333333333%;
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .controls{
+    position: absolute;
+    top: -40px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cell{
+    width: 50%;
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .head-inner,
+  .calendar-wrapper{
+    width: 350px;
+  }
+}

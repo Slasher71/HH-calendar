@@ -1,0 +1,65 @@
+/*===========================================================*/
+/*  Попапы
+/*===========================================================*/
+
+.add-box{
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: -10px;
+  width: 256px;
+  margin-left: 15px;
+  padding: 25px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 4px 2px #cfcfcf;
+  z-index: 10;
+  &:before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    height: 30px;
+    width: 20px;
+    background: url("../img/add-box-before.png") no-repeat right;
+  }
+  input[type="text"],
+  textarea{
+    font-size: 16px;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  textarea{
+    margin-top: 30px;
+  }
+}
+
+.add-box-close{
+  position: absolute;
+  width: 20px !important;
+  height: 20px !important;
+  top: 4px;
+  right: 2px;
+  border: none;
+  background: transparent;
+}
+
+.add-box-header{
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 10px;
+}
+
+.add-box-date{
+  display: block;
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.add-box-buttons{
+  margin: 20px 0 0;
+}
